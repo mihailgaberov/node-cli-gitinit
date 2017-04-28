@@ -1,6 +1,10 @@
+#!/usr/bin/env node
+
 /**
  * Created by mgab on 28/04/2017.
  */
+
+'use strict';
 var chalk = require('chalk');
 var clear = require('clear');
 var CLI = require('clui');
