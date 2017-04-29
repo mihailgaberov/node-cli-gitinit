@@ -83,11 +83,11 @@ function getGithubToken(callback) {
       if (err) {
         return callback(err);
       }
-      if (res.token) {
+      if (res.data.token) {
         prefs.github = {
-          token: res.token
+          token: res.data.token
         };
-        return callback(null, res.token);
+        return callback(null, res.data.token);
       }
       return callback();
     });
