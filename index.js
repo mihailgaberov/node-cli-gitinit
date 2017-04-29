@@ -63,7 +63,7 @@ function getGithubCredentials(callback) {
 }
 
 function getGithubToken(callback) {
-  var prefs = new Preferences('ginit');
+  var prefs = new Preferences('gitinit');
 
   if (prefs.github && prefs.github.token) {
     return callback(null, prefs.github.token);

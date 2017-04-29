@@ -15,7 +15,7 @@
     "CLI"
   ],
   "bin": {
-    "ginit": "./index.js"
+    "gitinit": "./index.js"
   },
   "author": "Mihail Gaberov",
   "license": "ISC",
