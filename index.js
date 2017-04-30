@@ -5,6 +5,7 @@
  */
 
 'use strict';
+
 var chalk = require('chalk');
 var clear = require('clear');
 var CLI = require('clui');
@@ -136,14 +137,14 @@ function createRepo(callback) {
       private: (answers.visibility === 'private')
     };
 
-    github.repos.create(
-      data,
-      function (err, res) {
+    github.repos.create(data, function (err, res) {
         status.stop();
+
         if (err) {
           return callback(err);
         }
-        return callback(null, res.ssh_url);
+
+        return callback(null, res.data.clone_url);
       }
     );
   });
@@ -190,6 +191,7 @@ function setupRepo(url, callback) {
     .addRemote('origin', url)
     .push('origin', 'master')
     .then(function () {
+      console.log('Setting up repo done.')
       status.stop();
       return callback();
     });
@@ -200,6 +202,7 @@ function githubAuth(callback) {
     if (err) {
       return callback(err);
     }
+
     github.authenticate({
       type: 'oauth',
       token: token
@@ -219,6 +222,7 @@ githubAuth(function (err, authed) {
         break;
     }
   }
+
   if (authed) {
     console.log(chalk.green('Sucessfully authenticated!'));
     createRepo(function (err, url) {
