@@ -2,7 +2,7 @@
 
 Done via [this tutorial](https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/). Added additional functionality added for completeness and self-training.
 
-![Image of the app](https://github.com/mihailgaberov/node-cli-gitinit/screenshot.png)
+![Image of the app](https://github.com/mihailgaberov/node-cli-gitinit/blob/master/screenshot.png)
 
 ## Running The App
 
