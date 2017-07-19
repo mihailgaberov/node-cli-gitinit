@@ -224,10 +224,10 @@ githubAuth(function (err, authed) {
   }
 
   if (authed) {
-    console.log(chalk.green('Sucessfully authenticated!'));
+    console.log(chalk.green('Successfully authenticated!'));
     createRepo(function (err, url) {
       if (err) {
-        console.log('An error has occured');
+        console.log('An error has occurred');
       }
       if (url) {
         createGitignore(function () {
