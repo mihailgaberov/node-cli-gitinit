@@ -1,6 +1,6 @@
 # JavaScript Command Line Interface (CLI) with Node.js for initializing Github repos
 
-Done via [this tutorial](https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/). Added additional functionality added for completeness and self-training.
+Done via [this tutorial](https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/). Additional functionality added for completeness and self-training.
 
 ![Image of the app](https://github.com/mihailgaberov/node-cli-gitinit/blob/master/screenshot.png)
 
