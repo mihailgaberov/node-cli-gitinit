@@ -30,7 +30,7 @@
     "figlet": "^1.2.0",
     "github": "^9.2.0",
     "inquirer": "^3.0.6",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "minimist": "^1.2.0",
     "preferences": "^0.2.1",
     "simple-git": "^1.70.0",
